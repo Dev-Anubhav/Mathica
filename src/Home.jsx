@@ -19,7 +19,7 @@ const Home = () => {
         const model = genAI.getGenerativeModel({ model: "gemini-pro-vision" });
         
         const result = await model.generateContent([
-            "first read question in the image than give solution", imageInineData
+            "first read question in the image correctly than give accurate solution", imageInineData
         ]);
         const response = await result.response;
         const text = response.text();
