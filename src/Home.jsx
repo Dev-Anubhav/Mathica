@@ -17,7 +17,7 @@ const Home = () => {
         setLoading(true);
         setResponse('');
         const model = genAI.getGenerativeModel({ model: "gemini-pro-vision" });
-        const promt = "Act as an expert mathmatician and give this maths problem solution in hindi and english and make sure to start hindi solution from new line"
+        const promt = "Act as an expert mathmatician and check the question in the photo correctly than give the solution of the question with explanation"
         const result = await model.generateContent([
             promt, imageInineData
         ]);
