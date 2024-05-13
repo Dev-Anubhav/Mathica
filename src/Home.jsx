@@ -4,9 +4,9 @@ import { getBase64 } from './imagehelper';
 
 const Home = () => {
     
-    const apiKey = import.meta.env.VITE_API_KEY;
+    
 
-    const genAI = new GoogleGenerativeAI(apiKey);
+    const genAI = new GoogleGenerativeAI("AIzaSyADJX3f5RF4G7zxtxjZsL7mHEfR8gpvsmk");
 
     const [image, setImage] = useState('');
     const [imageInineData, setImageInlineData] = useState('');
