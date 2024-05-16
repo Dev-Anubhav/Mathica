@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { getBase64 } from './imagehelper';
+import img from "./assets/Abstract Shapes 2.png"
 
 const Home = () => {
     
@@ -68,12 +69,20 @@ const Home = () => {
 <div className="home">
   <div className="container">
     <div className="row">
-      <div className="col-6 col-m-12">
+      <div className="col-7 col-m-12">
+        <h2><span className="blue">Intelligent</span> Ai-based 
+Problem solving tool</h2>
+<p className='text'>Experience the power of smart problem solving and transform the way you work today.</p>
       <div style={{ display: 'flex' }}>
                     <input type='file' onChange={(e) => handleImageChange(e)} />
                     <button style={{ marginLeft: '20px' }} onClick={() => handleClick()}>Search</button>
                 </div>
                 <img src={image} style={{ marginTop: 30 }} />
+      </div>
+      <div className="col-5 order col-m-12">
+        <div className="hero-img">
+            <img src={img} alt="" />
+        </div>
       </div>
     </div>
           

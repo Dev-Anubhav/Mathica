@@ -11,7 +11,7 @@ abbr[title]{ text-decoration: underline dotted; -webkit-text-decoration: underli
 
 
 html{scroll-behavior: smooth;}
-body{font-family: 'open sans', sans-serif; background: #D9E0F2; color: #333333; }
+body{font-family: 'open sans', sans-serif; background: #080808; color: #333333; }
 
 
 
@@ -43,35 +43,36 @@ body{font-family: 'open sans', sans-serif; background: #D9E0F2; color: #333333; 
 
 /* Navbar */
 .navbar{position: fixed; left: 0; right: 0; padding: 15px 20px; }
-.navbar a{display: block; font-size: 1vw; color: inherit; }
+.navbar a{display: block; font-size: 1vw; color: white; }
 .navbar ul{display: flex; gap: 60px; justify-content: right;}
-.navbar ul li a{font-size: 1.2vw; font-weight: 600; color: inherit;}
+.navbar ul li a{font-size: 1.2vw; font-weight: 600; color: white;}
 
 
 
 
 
 /* Content */
-.home{padding: 100px 20px 0 20px}
+.home{padding: 200px 20px 0 20px}
 .home h2{font-size: 4vw; font-weight: 600; width: 90%;}
+.home .text{color: white; margin-bottom: 40px; font-size: .9rem; margin-top: 10px;}
 
 
 .home .content{display: flex; flex-flow: column wrap; height: 80vh; justify-content: space-between;}
-.home button{background: #F7CAC9; color: inherit; font-weight: 600; padding: 10px 20px; border: none; border-radius: 5px;}
-.home p{font-size: 1rem;}
+.home button{background: linear-gradient(to right,#AAD9D1,#017373); color: inherit; font-weight: 600; padding: 10px 20px; border: none; border-radius: 5px;}
+.home p{font-size: 1rem; color: white;}
 .home img{width: 100%;}
+.home h2{color: white;}
+.home h2 span{background: linear-gradient(to right,#AAD9D1,#017373); background-clip: text; color: transparent;}
 
 
   
+.hero-img img{max-width: 100%; height: auto;}
 
+  
 
-  .about{
-    padding: 100px 20px;
-  }
+  .about h4{color: white;}
 
-  .about h4{color: inherit;}
-
-  .about p{margin-top: 20px; color: inherit;}
+  .about p{margin-top: 20px; color: white;}
  
 
   /* Responsive Design */
@@ -80,4 +81,7 @@ body{font-family: 'open sans', sans-serif; background: #D9E0F2; color: #333333; 
     .navbar ul li a{font-size: 3vw;}
     .col-m-12{max-width: 100%; flex-basis: 100%;}
     .home img{width: 100%;}
+    .order{order: -1;}
+    .home h2{font-size: 30px;}
+    .home{padding: 70px 0;}
   }
